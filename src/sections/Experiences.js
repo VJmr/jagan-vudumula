@@ -7,16 +7,16 @@ class Experiences extends Component {
         this.state = {
             experiences: [
                 {
-                    title: 'Full Stack Web Developer',
+                    title: 'Software Developer',
                     organisation: 'RealPage',
                     period: '2018 - till date',
-                    responsibilities: [],
+                    responsibilities: ['Develop applications using Angular/React, C# .NET and SQL.'],
                 },
                 {
-                    title: 'Full Stack Web Developer',
+                    title: 'IT Analyst',
                     organisation: 'TCS',
                     period: '2013 - 2017',
-                    responsibilities: [],
+                    responsibilities: ['Develop applications using jQuery/AngularJS, C# .NET and SQL.'],
                 }
             ],
             education: {
@@ -24,7 +24,7 @@ class Experiences extends Component {
                 organisation: 'GVPCOE (JNTU K)',
                 period: '2009 - 2013',
                 responsibilities: [],
-                description: ''
+                description: 'Computer Science and Engineering'
             }
         }
     }
@@ -34,7 +34,7 @@ class Experiences extends Component {
                 <div className="row my__section">
                     <div className="col-md-6">
                         <div className="exp__details">
-                            <h2>Work Experience</h2>
+                            <h1>Work Experience</h1>
                             {
                                 this.state.experiences.map((item, index) => {
                                     return (
@@ -46,7 +46,7 @@ class Experiences extends Component {
                     </div>
                     <div className="col-md-6">
                         <div className="edu__details">
-                            <h2>Education</h2>
+                            <h1>Education</h1>
                             <DetailsCard data={this.state.education}></DetailsCard>
                         </div>
                     </div>

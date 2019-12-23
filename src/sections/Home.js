@@ -5,6 +5,29 @@ import { FaLinkedin, FaTwitterSquare } from "react-icons/fa";
 import Jagan from '../../src/assets/images/Jagan.jpg'
 
 class Home extends Component {
+    constructor() {
+        super();
+        this.state = {
+            links: [
+                {
+                    link: 'https://github.com/Vjmr',
+                    icon: <IoLogoGithub></IoLogoGithub>
+                },
+                {
+                    link: 'https://www.linkedin.com/in/jaganvudumula/',
+                    icon: <FaLinkedin></FaLinkedin>
+                },
+                {
+                    link: 'https://www.facebook.com/jaganvudumula',
+                    icon: <IoLogoFacebook></IoLogoFacebook>
+                },
+                {
+                    link: 'https://twitter.com/na_peru_jagan',
+                    icon: <FaTwitterSquare></FaTwitterSquare>
+                }
+            ]
+        }
+    }
     render() {
         return(
             <section id="home" className="container">
@@ -18,19 +41,15 @@ class Home extends Component {
                             <p><GoLocation />&nbsp;&nbsp;Hyderabad, Telangana, India</p>
                         </div>
                         <div>
-                            <a href="https://github.com/Vjmr" className="basic__links" target="blank">
-                                <IoLogoGithub></IoLogoGithub>
-                            </a>
-                            <a href=
-                            "https://www.linkedin.com/in/jaganvudumula/" className="basic__links" target="blank">
-                                <FaLinkedin></FaLinkedin>
-                            </a>
-                            <a href="https://www.facebook.com/jaganvudumula" className="basic__links" target="blank">
-                                <IoLogoFacebook></IoLogoFacebook>
-                            </a>
-                            <a href="https://twitter.com/na_peru_jagan" className="basic__links" target="blank">
-                                <FaTwitterSquare></FaTwitterSquare>
-                            </a>
+                            {
+                                this.state.links.map((item, index) => {
+                                    return (
+                                        <a href={item.link} className="basic__links" target="blank" key={index}>
+                                            {item.icon}
+                                        </a>
+                                    )
+                                })
+                            }
                         </div>
                     </div>
                     <div className="col-md-6">
