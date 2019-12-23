@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
-import Header from './components/Header';
-import About from './components/About';
-import Contact from './components/Contact';
-import Experiences from './components/Experiences';
-import Home from './components/Home';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
-import Footer from './components/Footer';
+import Header from './sections/Header';
+import About from './sections/About';
+import Contact from './sections/Contact';
+import Experiences from './sections/Experiences';
+import Home from './sections/Home';
+import Projects from './sections/Projects';
+import Skills from './sections/Skills';
+import Footer from './sections/Footer';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
