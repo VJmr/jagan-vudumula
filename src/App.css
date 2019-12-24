@@ -149,11 +149,13 @@ section h1 {
 
 .contact__card-icon {
   margin: 3% auto;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   border: 2px solid #225588;
   border-radius: 50%;
   width: 120px;
   color: black;
+  font-size: 2rem;
+  color: #225588;
 }
 
 .contact__card h3 {
@@ -182,4 +184,49 @@ footer ul li {
 footer ul li a{
   color: black;
   font-size: 1.2rem;
+}
+
+.skill__card {
+  width: 25%;
+  padding: 5%;
+  display: inline-block;
+  text-align: center;
+  align-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  margin-top:2%; 
+}
+
+.skill__card-img {
+  height: 100px;
+}
+
+.skill__card-icon {
+  font-size: 67px;
+}
+
+.skill__card h6 {
+  margin-top: 2rem; 
+}
+
+@media only screen and (max-width: 767px) { 
+  .contact__card {
+    width: 100%;
+  }
+  .skill__card {
+    width: 50%;
+  }
+  .project {
+    width: 100%;
+    margin: 0% 3%;
+  }
+  .my__details, .my__name {
+    text-align: center;
+  }
+  #home {
+    margin-top: 0%; 
+  }
+  .contact__card {
+    margin-top: 5%; 
+  }
 }

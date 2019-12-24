@@ -32,8 +32,7 @@ class Home extends Component {
         return(
             <section id="home" className="container">
                 <div className="row my__section">
-                    <div className="col-md-6">
-                        <span></span>
+                    <div className="col-md-6 order-md-1 order-2 my__details">
                         <h1 className="my__name">Jagan Vudumula</h1>
                         <h4 className="my__role">Web Developer</h4>
                         <div className="basic__details">
@@ -52,7 +51,7 @@ class Home extends Component {
                             }
                         </div>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-6 order-md-2 order-1">
                         <div className="my__picture-container">
                             <div className="my__picture">
                                 <img alt="Jagan Vudumula" src={Jagan}></img>
