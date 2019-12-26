@@ -4,7 +4,7 @@ import Header from './Header';
 
 test('renders text in header component', () => {
     const { getByText } = render(<Header />);
-    const linkElement = getByText(/Header/i);
+    const linkElement = getByText(/Home/i);
     expect(linkElement).toBeInTheDocument();
 });
   

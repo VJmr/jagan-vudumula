@@ -4,7 +4,7 @@ import About from './About';
 
 test('renders text in about component', () => {
     const { getByText } = render(<About />);
-    const linkElement = getByText(/About/i);
+    const linkElement = getByText(/About me/i);
     expect(linkElement).toBeInTheDocument();
 });
   

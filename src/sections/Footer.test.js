@@ -4,6 +4,6 @@ import Footer from './Footer';
 
 test('renders text in footer component', () => {
     const { getByText } = render(<Footer />);
-    const linkElement = getByText(/Footer/i);
+    const linkElement = getByText(/Jagan Vudumula/i);
     expect(linkElement).toBeInTheDocument();
 });
